@@ -1,12 +1,9 @@
 {
-  "name": "ai-vibes-radar-mcp",
+  "name": "ai-vibes-radar-mcp-http",
   "version": "1.0.0",
-  "description": "MCP Server for AI Vibes Radar - Brand Perception Analysis",
+  "description": "HTTP API wrapper for AI Vibes Radar MCP Server",
   "type": "module",
   "main": "server.js",
-  "bin": {
-    "ai-vibes-radar-mcp": "./server.js"
-  },
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js"
@@ -15,15 +12,15 @@
     "mcp",
     "brand-analysis",
     "ai",
-    "openai",
-    "anthropic"
+    "http-api"
   ],
   "author": "Simon Franco",
   "license": "MIT",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.32.1",
-    "@modelcontextprotocol/sdk": "^1.0.4",
     "@supabase/supabase-js": "^2.47.10",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
     "openai": "^4.73.0"
   },
   "engines": {
